@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form>
+      <!-- Way 1 to link LABEL-INPUT pairs -->
+      <!-- <label for="username">Username</label>
+         <input type="text" id="username">
+
+         <label for="password">Password</label>
+         <input type="password" id="password"> -->
+
+      <!-- Way 2 to link LABEL-INPUT pairs -->
+
+      <!-- <label>Username <input type="text" /></label>
+      <label>Password <input type="password" /></label> -->
+    </form>
+
+    <form action="/myApi" method="POST">
+      <label for="username">username</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="user123"
+        name="username"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        minlength="6"
+        required
+      />
+
+      <!-- 
+        "required" is a keyword that you use to specify that 
+        an input field is important  
+      -->
+      <fieldset>
+        <legend>Choose an animal</legend>
+        <label for="dog">Dog</label>
+        <input id="dog" type="radio" name="animal" value="dog" />
+
+        <label for="cat">Cat</label>
+        <input id="cat" type="radio" name="animal" value="cat" />
+
+        <label for="dog">Horse</label>
+        <input id="horse" type="radio" name="animal" value="horse" />
+      </fieldset>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
